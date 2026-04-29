@@ -111,8 +111,8 @@ abctl local credentials
 
 Dans l'UI, créer :
 
-1. Une **source** Postgres (host : `source_postgres`, port `5432`, db `source_db`, user `postgres`, password `secret`)
-2. Une **destination** Postgres (host : `destination_postgres`, port `5432`, db `destination_db`, user : `postgres`, password : `secret`)
+1. Une **source** Postgres (host : `source_postgres`, port `5433`, db `source_db`, user `postgres`, password `secret`)
+2. Une **destination** Postgres (host : `destination_postgres`, port `5434`, db `destination_db`, user : `postgres`, password : `secret`)
 3. Une **connection** entre les deux → noter le `connectionId` qui apparaît dans l'URL.
 
 Mettre cet ID dans `airflow/dags/elt_dag.py` :
