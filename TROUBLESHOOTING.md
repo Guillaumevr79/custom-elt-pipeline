@@ -85,8 +85,8 @@ Host = http://host.docker.internal:8000/api/public/v1
 
 Chaque `abctl local uninstall` (appelé dans `stop.sh`) supprime toutes les sources, destinations et connexions. Au redémarrage il faut tout recréer dans l'UI (`localhost:8000`) :
 
-1. Source Postgres — host : `source_postgres`, port `5432`, db `source_db`
-2. Destination Postgres — host : `destination_postgres`, port `5432`, db `destination_db`
+1. Source Postgres — host : `source_postgres`, port `5433`, db `source_db`
+2. Destination Postgres — host : `destination_postgres`, port `5434`, db `destination_db`
 3. Connection entre les deux — noter le nouveau `connectionId`
 4. Mettre à jour `CONN_ID` dans `airflow/dags/elt_dag.py`
 
